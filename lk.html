@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ - Онлайн магазин Royal</title>
+    <link rel="stylesheet" href="lk.css">
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="img/10.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="header-container">
+            <nav class="nav-left">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="katalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <h1 class="header-title">Онлайн магазин Royal</h1>
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="corzina.html">Корзина</a></li>
+                    <li><a href="lk.html">Заказ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="account">
+            <h2>Личный кабинет</h2>
+            <div class="account-info">
+                <h3>Ваши данные</h3>
+                <form id="account-form">
+                    <div class="input-field">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="address">Адрес:</label>
+                        <input type="text" id="address" name="address" placeholder="Ваш адрес" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" placeholder="Ваш пароль" required>
+                    </div>
+                    <button type="submit">Сохранить изменения</button>
+                </form>
+            </div>
+
+            <div class="account-history">
+                <h3>История заказов</h3>
+                <ul>
+                    <li>
+                        <span class="order-date">01.01.2024</span> - 
+                        <span class="order-number">№12345</span> - 
+                        <span class="order-status">В обработке</span>
+                    </li>
+                    <li>
+                        <span class="order-date">15.01.2024</span> - 
+                        <span class="order-number">№67890</span> - 
+                        <span class="order-status">Доставлен</span>
+                    </li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+    <script>const accountForm = document.getElementById('account-form');
+
+        accountForm.addEventListener('submit', (event) => {
+          event.preventDefault(); // Предотвращаем стандартную отправку формы
+        
+          // Получаем значения из полей формы
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const address = document.getElementById('address').value;
+          const password = document.getElementById('password').value;
+        
+          // Проверяем, заполнены ли все поля
+          if (name && email && phone && address && password) {
+            // Отправляем данные на сервер (используя AJAX или Fetch API)
+            // ...
+        
+            // После успешной отправки выводим сообщение об успехе
+            alert('Изменения сохранены!');
+          } else {
+            // Выводим сообщение об ошибке
+            alert('Пожалуйста, заполните все поля.');
+          }
+        });
+        </script>
+    <footer>
+        <p> 2024 Магазин Royal. Все права защищены.</p>
+    </footer>
+    <script src="lk.js"></script> </body>
+</html>

@@ -1,0 +1,250 @@
+/* Общие стили */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dfa7c5;
+  background-size: cover; /* Масштабируем фон, чтобы он покрывал всю страницу */
+  background-repeat: no-repeat; /* Отключаем повторение фона */
+  color: #020202;
+  }
+  
+  header {
+  background-color: #f8f0f0;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  }
+  
+  h1, h2,h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  }
+  
+  h1 {
+  font-size: 2rem;
+  color: #5c0747; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); 
+  font-style: italic; /* Курсивный шрифт */
+  text-decoration: wavy; /* Волны под шрифтом */
+  }
+  
+  h2 {
+  font-size: 2rem; 
+  color: #020202;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-style: italic; /* Курсивный шрифт */
+  text-decoration: wavy; /* Волны под шрифтом */
+  }
+  
+  /* Стиль для заголовка */
+  .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  }
+  
+  .header-title {
+  font-size: 3 rem;
+  color: #3f0c3c; 
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  font-style: italic; /* Курсивный шрифт */
+  text-decoration: wavy; /* Волны под шрифтом */
+  }
+  
+ /* Стиль для меню */
+ .nav-left, .nav-right {
+  display: flex;
+  font-style: italic;
+  font-size: 1rem;
+  align-items: center;
+  background-color:#66143a
+  
+  }
+  
+  .nav-left ul, .nav-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; 
+  }
+  
+  .nav-left li, .nav-right li {
+  margin: 0 1rem; /* Уменьшаем отступ между пунктами меню */
+  }
+  
+  .nav-left a, .nav-right a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  font-style: italic; 
+  text-decoration: wavy; 
+  padding: 1.5rem 2rem; /* Увеличиваем padding */
+  border-radius: 20px; 
+  font-size: 1.8rem; /* Увеличиваем размер шрифта */
+  }
+  
+  .nav-left a:hover, .nav-right a:hover {
+  color: #790b42; 
+  }
+  
+  /* Стиль для сетки товаров */
+  .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 2rem;
+  }
+  
+  /* Стиль для блока товара */
+  .product {
+  /* Рамка */
+  background-color: #7a1638; /* Бордовый фон для блока */
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease;
+  border: 3px solid #b41313; /* Золотистая рамка */
+  }
+  
+  .product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Стиль для изображения товара */
+  .product-content {
+  background-color: #fff; /* Белый фон для контента */
+  padding: 1rem;
+  border-radius: 20px; 
+  }
+  
+  .product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 15px; 
+  }
+  
+  .product p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #f7ebeb;
+  font-style: italic; /* Курсивный шрифт */
+  text-decoration: wavy; /* Волны под шрифтом */
+  }
+  
+  /* Стиль для подвала */
+  footer {
+  background-color: #0f0101; 
+  color: #fff;
+  padding: 10px;
+  size: 10rem;
+  text-align: center;
+  }
+  
+  /* Дополнительные цвета */
+  .product h3 {
+  color: #f1e9e9; /* Серебристый цвет для заголовка товара */
+  font-style: italic; /* Курсивный шрифт */
+  text-decoration: wavy; /* Волны под шрифтом */
+  }
+  
+  .product p {
+  color: #fcf4f4; /* Серый цвет для описания товара */
+  font-style: italic; /* Курсивный шрифт */
+  text-decoration: wavy; /* Волны под шрифтом */
+  }
+  ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+ }
+ 
+ li {
+  margin-bottom: 8px;
+  font-size: 20px;
+ }
+ 
+ /* Добавленные стили для меню */
+ nav ul li a {
+  /* ... существующие стили ... */
+  font-size: 2rem; /* Увеличиваем размер шрифта */
+  letter-spacing: 0.1rem; /* Уменьшаем отступ между буквами */
+ }
+ 
+ nav ul li {
+  margin-right: 20px; /* Уменьшаем отступ между пунктами меню */
+ }
+ 
+ nav ul li a:hover {
+  color: #fff; /* Изменяем цвет шрифта при наведении курсора */
+ }
+
+        /* ... ваш существующий CSS ... */
+
+        .marquee-container {
+          position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+          z-index: 20; /* Устанавливаем  z-index  для  контейнера,  чтобы  он  был  выше  других  элементов */
+      }
+
+      .marquee {
+          width: 50%;
+          overflow: hidden;
+          white-space: nowrap;
+          box-sizing: border-box;
+          background-color: rgba(155, 28, 81, 0.8); /* Желтый фон */
+          color: #f3f3ec;
+          font-size: 2em;
+          font-weight: bold;
+          padding: 20px 0;
+          animation: scroll 20s linear infinite; /* Apply the animation to the container *15
+          display: flex; /* Use flexbox to align items */
+          justify-content: space-between; /* Space items evenly */
+          position: relative; /* Add position: relative to the container */
+          margin-bottom: 15px; /* Добавляем отступ снизу */
+      }
+
+      .marquee span {
+          display: inline-block;
+          position: absolute; /* Make the span positioned absolutely */
+          top: 0; /* Align to the top */
+          left: 0; /* Align to the left */
+      }
+
+      @keyframes scroll {
+          0% { transform: translateX(0); }
+          80% { transform: translateX(-100%); }
+      }
+
+      /* Style for the second marquee (on the right) */
+      .marquee span:last-child { /* Select the last span within .marquee */
+          animation: scrollReverse 15s linear infinite;
+          transform: translateX(100%); /* Start offscreen on the right */
+      }
+
+      @keyframes scrollReverse {
+          0% { transform: translateX(100%); }
+          80% { transform: translateX(0); }
+      }
+
+      /* Make the marquee longer (for example, twice the width of the viewport) */
+      .marquee {
+          width: 200%; /* Set the width to 200% */
+      }
+
+      /* Align the text to the right to make it appear from the right */
+      .marquee span {
+          text-align: left; /* Align text to the right */
+      }
